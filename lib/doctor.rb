@@ -15,6 +15,9 @@ class Doctor
     Appointment.new(patient, self, date)
   end
 
+  def appointments
+  end
+
   # def songs
   #   Song.all.select { |song| song.artist == self }
   # end
