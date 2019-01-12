@@ -1,5 +1,5 @@
 class Doctor
-  attr_accessor :name, :patients, :appointments
+  attr_accessor :name
   @@all = []
 
   def initialize(name)
@@ -20,9 +20,6 @@ class Doctor
   end
 
   def patients
-  end
-
-  def genres
-    songs.map(&:genre)
+    appointment.map(&:patient)
   end
 end
